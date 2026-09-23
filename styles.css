@@ -1,0 +1,89 @@
+﻿:root {
+    --color-bg: #D3D3D3;
+    --color-text: #000000;
+    --color-accent: #0000FF;
+    --color-visited: #800080;
+    --font-base: Arial, Verdana, Helvetica, sans-serif;
+    --font-heading: Georgia, "Times New Roman", serif;
+}
+
+body {
+    padding-left: 10px;
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 3px solid var(--color-accent);
+    border-radius: 50%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar:hover .img {
+    transform: scale(1.26);
+}
+
+.avatar:active .img {
+    filter: grayscale(100%);
+}
+
+.base {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.inmain {
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.sidebar {
+    padding: 20px;
+    border: 3px solid var(--color-accent);
+    border-radius: 30px;
+    position: relative;
+}
+
+.sidebar::before {
+    content: "🌄";
+    right: 15px;
+    position: absolute;
+}
+
+.con {
+    position: static;
+}
+
+.con input, .con textarea {
+    border: 1px solid var(--color-accent);
+}
+
+.con input:focus, .con textarea:focus {
+    border: 3px solid var(--color-accent);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--color-visited);
+}
