@@ -7,8 +7,11 @@
     <style>
         aside a {
             color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        aside a:hover {
             text-decoration: underline;
-            text-underline-offset: 4px;
         }
     </style>
 </head>
@@ -59,7 +62,7 @@
                     <label>Сообщение</label>
                     <textarea name="usermessage" placeholder="Здравствуйте, не могли бы вы рассказать о..."></textarea>
                 </div>
-                <input type="button" value="Отправить">
+                <button type="button" class="btn">Отправить</button>
             </section>
         </main>
 
